@@ -1,60 +1,156 @@
 {
-  "items": [
+  "profile": {
+    "nickname": "지수",
+    "recordedCount": 47,
+    "subscriptions": ["넷플릭스", "티빙", "쿠팡플레이"]
+  },
+  "moods": [
+    { "id": "default", "label": "기본", "desc": "내 기록 전체를 기준으로 골라요", "icon": "auto_awesome" },
+    { "id": "short", "label": "2시간 이내", "desc": "자기 전에 끝낼 수 있는 길이", "icon": "schedule" },
+    { "id": "light", "label": "가볍게", "desc": "머리 식히면서 편하게", "icon": "spa" },
+    { "id": "deep", "label": "몰입해서", "desc": "주말에 제대로 빠져들기", "icon": "local_fire_department" }
+  ],
+  "titles": [
     {
-      "id": 1,
-      "title": "예시 항목 1",
-      "subtitle": "TODO: 내 앱의 실제 화면에 맞는 예시 문구로 바꾼다",
-      "image": "https://picsum.photos/seed/item1/400/300",
-      "tags": [
-        "예시",
-        "태그A"
-      ]
+      "id": "t1", "title": "헤어질 결심", "type": "영화", "year": 2022, "runtime": "138분",
+      "genres": ["로맨스", "미스터리"], "color": "FF2E4A62",
+      "synopsis": "산에서 벌어진 변사 사건을 수사하던 형사가 사망자의 아내를 만나며 의심과 관심 사이에서 흔들린다.",
+      "ott": [{ "name": "넷플릭스", "kind": "구독", "price": "구독 중" }, { "name": "쿠팡플레이", "kind": "구독", "price": "구독 중" }]
     },
     {
-      "id": 2,
-      "title": "예시 항목 2",
-      "subtitle": "목록 → 상세 → 결과 흐름을 확인하기 위한 샘플 데이터",
-      "image": "https://picsum.photos/seed/item2/400/300",
-      "tags": [
-        "태그B"
-      ]
+      "id": "t2", "title": "나의 아저씨", "type": "드라마", "year": 2018, "runtime": "16부작",
+      "genres": ["휴먼", "드라마"], "color": "FF4B3F35",
+      "synopsis": "삶의 무게를 버티며 살아가는 세 형제와, 거칠게 살아온 한 사람이 서로를 통해 위로받는 이야기.",
+      "ott": [{ "name": "넷플릭스", "kind": "구독", "price": "구독 중" }, { "name": "티빙", "kind": "구독", "price": "구독 중" }]
     },
     {
-      "id": 3,
-      "title": "예시 항목 3",
-      "subtitle": "태그가 없는 항목 (빈 값도 화면이 깨지지 않는지 확인)",
-      "image": "https://picsum.photos/seed/item3/400/300",
-      "tags": []
+      "id": "t3", "title": "패스트 라이브즈", "type": "영화", "year": 2023, "runtime": "106분",
+      "genres": ["로맨스", "드라마"], "color": "FF3D5A73",
+      "synopsis": "어린 시절 헤어진 두 사람이 24년 뒤 뉴욕에서 다시 만나 함께 보내는 며칠.",
+      "ott": [{ "name": "티빙", "kind": "구독", "price": "구독 중" }, { "name": "애플 TV", "kind": "대여", "price": "대여 4,900원" }]
     },
     {
-      "id": 4,
-      "title": "예시 항목 4",
-      "subtitle": "넓은 화면(600dp 이상)에서는 격자로 보인다",
-      "image": "https://picsum.photos/seed/item4/400/300",
-      "tags": [
-        "태그A",
-        "태그B"
-      ]
+      "id": "t4", "title": "무빙", "type": "드라마", "year": 2023, "runtime": "20부작",
+      "genres": ["액션", "판타지"], "color": "FF2F3B52",
+      "synopsis": "초능력을 숨긴 채 살아가는 아이들과, 과거의 비밀을 안고 사는 부모들의 이야기.",
+      "ott": [{ "name": "디즈니+", "kind": "구독", "price": "미구독" }]
+    },
+    {
+      "id": "t5", "title": "리틀 포레스트", "type": "영화", "year": 2018, "runtime": "103분",
+      "genres": ["힐링", "드라마"], "color": "FF3F5B3A",
+      "synopsis": "도시 생활에 지친 주인공이 고향 집으로 돌아와 사계절 동안 직접 키운 재료로 밥을 지어 먹는다.",
+      "ott": [{ "name": "넷플릭스", "kind": "구독", "price": "구독 중" }]
+    },
+    {
+      "id": "t6", "title": "더 글로리", "type": "드라마", "year": 2022, "runtime": "16부작",
+      "genres": ["스릴러", "드라마"], "color": "FF3A2E3F",
+      "synopsis": "학창 시절 폭력의 피해자가 오랜 시간 준비한 복수를 하나씩 실행해 나간다.",
+      "ott": [{ "name": "넷플릭스", "kind": "구독", "price": "구독 중" }]
+    },
+    {
+      "id": "t7", "title": "애프터썬", "type": "영화", "year": 2022, "runtime": "101분",
+      "genres": ["드라마"], "color": "FF5A4A3A",
+      "synopsis": "어른이 된 딸이 어린 시절 아빠와 떠났던 여름 휴가의 기억을 다시 들여다본다.",
+      "ott": [{ "name": "쿠팡플레이", "kind": "구독", "price": "구독 중" }]
+    },
+    {
+      "id": "t8", "title": "슬기로운 의사생활", "type": "드라마", "year": 2020, "runtime": "12부작",
+      "genres": ["휴먼", "코미디"], "color": "FF2F5552",
+      "synopsis": "20년 지기 의대 동기 다섯 명이 같은 병원에서 일하며 겪는 평범하고 특별한 하루들.",
+      "ott": [{ "name": "넷플릭스", "kind": "구독", "price": "구독 중" }, { "name": "티빙", "kind": "구독", "price": "구독 중" }]
+    },
+    {
+      "id": "t9", "title": "인사이드 아웃 2", "type": "영화", "year": 2024, "runtime": "96분",
+      "genres": ["애니메이션", "가족"], "color": "FF4A3F6B",
+      "synopsis": "사춘기를 맞은 라일리의 머릿속에 '불안'을 비롯한 새로운 감정들이 찾아온다.",
+      "ott": [{ "name": "디즈니+", "kind": "구독", "price": "미구독" }, { "name": "애플 TV", "kind": "대여", "price": "대여 4,900원" }]
+    },
+    {
+      "id": "t10", "title": "소년심판", "type": "드라마", "year": 2022, "runtime": "10부작",
+      "genres": ["법정", "드라마"], "color": "FF3B3B45",
+      "synopsis": "소년범을 혐오하는 판사가 소년부에 부임해 여러 사건을 마주한다.",
+      "ott": [{ "name": "넷플릭스", "kind": "구독", "price": "구독 중" }]
+    },
+    {
+      "id": "t11", "title": "기생충", "type": "영화", "year": 2019, "runtime": "132분",
+      "genres": ["드라마", "스릴러"], "color": "FF3E4A3A",
+      "synopsis": "반지하에 사는 가족이 부잣집에 하나둘 들어가면서 벌어지는 예측할 수 없는 사건.",
+      "ott": [{ "name": "티빙", "kind": "구독", "price": "구독 중" }]
+    },
+    {
+      "id": "t12", "title": "우리들의 블루스", "type": "드라마", "year": 2022, "runtime": "20부작",
+      "genres": ["휴먼", "드라마"], "color": "FF2F4F6B",
+      "synopsis": "제주를 배경으로 서로 얽힌 이웃들의 삶을 옴니버스로 그린다.",
+      "ott": [{ "name": "넷플릭스", "kind": "구독", "price": "구독 중" }, { "name": "티빙", "kind": "구독", "price": "구독 중" }]
     }
   ],
-  "notes": [
-    {
-      "id": 1,
-      "itemId": 1,
-      "text": "예시 메모 1 — 상세 화면 '메모' 탭에 보인다",
-      "date": "2026-10-15"
-    },
-    {
-      "id": 2,
-      "itemId": 1,
-      "text": "예시 메모 2",
-      "date": "2026-10-16"
-    },
-    {
-      "id": 3,
-      "itemId": 2,
-      "text": "예시 메모 3",
-      "date": "2026-10-17"
-    }
-  ]
+  "picks": [
+    { "id": "p1", "mood": "default", "rank": 1, "titleId": "t3", "matchPercent": 92,
+      "reasons": ["'헤어질 결심'에 좋았어요", "잔잔한 로맨스 선호", "티빙 구독 중"],
+      "aiComment": "대사보다 여운이 긴 로맨스를 좋아하셨어요. 106분이라 오늘 밤 끝까지 보기 좋아요." },
+    { "id": "p2", "mood": "default", "rank": 2, "titleId": "t12", "matchPercent": 88,
+      "reasons": ["'나의 아저씨'에 좋았어요", "휴먼 드라마 기록 9편", "넷플릭스 구독 중"],
+      "aiComment": "사람 사이의 위로를 그린 드라마를 꾸준히 높게 평가하셨어요." },
+    { "id": "p3", "mood": "default", "rank": 3, "titleId": "t7", "matchPercent": 84,
+      "reasons": ["감정선 중심 영화 선호", "101분", "쿠팡플레이 구독 중"],
+      "aiComment": "짧지만 오래 남는 영화를 좋아하는 패턴과 맞아요." },
+
+    { "id": "p4", "mood": "short", "rank": 1, "titleId": "t5", "matchPercent": 90,
+      "reasons": ["103분", "힐링 장르에 좋았어요 4편", "넷플릭스 구독 중"],
+      "aiComment": "자기 전에 보기 좋은 길이에, 최근 '좋았어요'를 준 힐링 영화들과 결이 같아요." },
+    { "id": "p5", "mood": "short", "rank": 2, "titleId": "t3", "matchPercent": 92,
+      "reasons": ["106분", "잔잔한 로맨스 선호", "티빙 구독 중"],
+      "aiComment": "2시간 안에 끝나는 작품 중 취향 일치가 가장 높아요." },
+    { "id": "p6", "mood": "short", "rank": 3, "titleId": "t9", "matchPercent": 79,
+      "reasons": ["96분", "가족 영화 기록 3편", "애플 TV 대여 가능"],
+      "aiComment": "구독하지 않는 서비스라 대여가 필요해요. 그래서 3순위예요." },
+
+    { "id": "p7", "mood": "light", "rank": 1, "titleId": "t8", "matchPercent": 89,
+      "reasons": ["코미디 섞인 휴먼 드라마 선호", "한 회씩 끊어 보기 좋음", "넷플릭스 구독 중"],
+      "aiComment": "무겁지 않으면서도 사람 이야기를 좋아하시는 취향에 맞아요." },
+    { "id": "p8", "mood": "light", "rank": 2, "titleId": "t5", "matchPercent": 90,
+      "reasons": ["힐링 장르에 좋았어요 4편", "103분", "넷플릭스 구독 중"],
+      "aiComment": "편하게 틀어 두기 좋은 영화예요." },
+    { "id": "p9", "mood": "light", "rank": 3, "titleId": "t9", "matchPercent": 79,
+      "reasons": ["가족 영화 기록 3편", "96분", "애플 TV 대여 가능"],
+      "aiComment": "가볍게 웃고 싶은 날에 어울려요." },
+
+    { "id": "p10", "mood": "deep", "rank": 1, "titleId": "t6", "matchPercent": 87,
+      "reasons": ["스릴러에 좋았어요 6편", "주말 몰아보기 기록", "넷플릭스 구독 중"],
+      "aiComment": "주말에 드라마를 몰아 보신 기록이 많아요. 긴장감 있는 전개를 좋아하셨어요." },
+    { "id": "p11", "mood": "deep", "rank": 2, "titleId": "t10", "matchPercent": 83,
+      "reasons": ["법정·사회 드라마 선호", "10부작", "넷플릭스 구독 중"],
+      "aiComment": "생각할 거리를 남기는 드라마를 높게 평가하셨어요." },
+    { "id": "p12", "mood": "deep", "rank": 3, "titleId": "t4", "matchPercent": 76,
+      "reasons": ["액션 판타지 기록 2편", "20부작", "디즈니+ 미구독"],
+      "aiComment": "구독이 필요해서 3순위로 두었어요." }
+  ],
+  "history": [
+    { "id": "h1", "titleId": "t1", "rating": "good", "watchedAt": "2026-10-24" },
+    { "id": "h2", "titleId": "t2", "rating": "good", "watchedAt": "2026-10-19" },
+    { "id": "h3", "titleId": "t11", "rating": "good", "watchedAt": "2026-10-12" },
+    { "id": "h4", "titleId": "t4", "rating": "soso", "watchedAt": "2026-10-05" },
+    { "id": "h5", "titleId": "t10", "rating": "good", "watchedAt": "2026-09-28" },
+    { "id": "h6", "titleId": "t9", "rating": "soso", "watchedAt": "2026-09-21" },
+    { "id": "h7", "titleId": "t6", "rating": "good", "watchedAt": "2026-09-14" },
+    { "id": "h8", "titleId": "t8", "rating": "bad", "watchedAt": "2026-09-02" }
+  ],
+  "watchlist": [],
+  "taste": {
+    "basedOn": 47,
+    "summary": "여운이 긴 휴먼·로맨스 드라마를 좋아하고, 주말에는 긴장감 있는 시리즈를 몰아 보는 편이에요.",
+    "genres": [
+      { "name": "휴먼 드라마", "percent": 34 },
+      { "name": "로맨스", "percent": 22 },
+      { "name": "스릴러", "percent": 18 },
+      { "name": "힐링", "percent": 14 },
+      { "name": "액션·판타지", "percent": 12 }
+    ],
+    "keywords": ["잔잔한 여운", "사람 사이의 위로", "2시간 이내 영화", "주말 몰아보기", "넷플릭스 중심"],
+    "howItWorks": [
+      "'좋았어요'를 준 작품의 장르와 분위기를 묶어 봤어요.",
+      "구독 중인 서비스에서 바로 볼 수 있는 작품을 먼저 골라요.",
+      "시간대와 길이(평일 밤에는 짧게, 주말에는 길게)를 함께 봐요."
+    ]
+  }
 }

@@ -1,11 +1,11 @@
 {
-    "name": "Mid Project Template",
-    "short_name": "MidProject",
+    "name": "nextwatch",
+    "short_name": "nextwatch",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",
     "theme_color": "#0175C2",
-    "description": "GAI3008 중간고사 — 실제 앱 v2 UI 템플릿 (UI만 구현)",
+    "description": "A new Flutter project.",
     "orientation": "portrait-primary",
     "prefer_related_applications": false,
     "icons": [

@@ -1,13 +1,11 @@
 {
-  "name": "mid-project-template-mock-server",
-  "version": "1.0.0",
+  "name": "nextwatch-mock-server",
   "private": true,
-  "description": "GAI3008 중간고사 목업 서버 (json-server 0.17.4, 앱은 GET만 사용)",
+  "description": "Nextwatch 시연용 로컬 json-server (GET만 사용)",
   "scripts": {
-    "start": "json-server --watch db.json --port 3000 --host 0.0.0.0",
-    "mock": "json-server --watch db.json --port 3000 --host 0.0.0.0"
+    "start": "json-server --watch db.json --port 3000 --delay 800"
   },
-  "dependencies": {
+  "devDependencies": {
     "json-server": "0.17.4"
   }
 }
